@@ -32,14 +32,14 @@ class GoogleSitemapSiteTreeDecorator extends SiteTreeDecorator {
 			'0.8' => '3',
 			'0.7' => '4',
 			'0.6' => '5',
-			'0.5' => '6',
+			'0.5' => '6',  
 			'0.4' => '7',
 			'0.3' => '8',
 			'0.2' => '9',
 			'0.1' => '10 - ' . _t('SiteTree.PRIORITYLEASTIMPORTANT', "Least important")
 		);
 
-		$tabset = $fields->findOrMakeTab('Root.Content');
+		$tabset = $fields->findOrMakeTab('Root.Metadata');
 		
 		$message = "<p>";
 		$message .= sprintf(_t('SiteTree.METANOTEPRIORITY', "Manually specify a Google Sitemaps priority for this page (%s)"), 
